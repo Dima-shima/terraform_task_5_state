@@ -7,15 +7,7 @@ terraform {
       version = "3.105.0"
     }
   }
-}
-
-provider "azurerm" {
-  features {}
-
-  use_oidc = true
-}
-
-terraform {
+  
   backend "azurerm" {
     storage_account_name = "my1storage1dmytro"
     container_name       = "tfstate"
@@ -23,4 +15,10 @@ terraform {
     resource_group_name  = "tfstate"
     use_oidc             = true
   }
+}
+
+provider "azurerm" {
+  features {}
+
+  use_oidc = true
 }
