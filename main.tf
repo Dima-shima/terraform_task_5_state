@@ -7,7 +7,7 @@ terraform {
       version = "3.105.0"
     }
   }
-  
+
   backend "azurerm" {
     storage_account_name = "my1storage1dmytro"
     container_name       = "tfstate"
