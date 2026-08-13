@@ -1,4 +1,6 @@
 terraform {
+  required_version = ">= 1.8.4"
+
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -22,4 +24,3 @@ terraform {
     use_oidc             = true
   }
 }
-
